@@ -1,0 +1,18 @@
+<div class="wrap1">
+	<form name="cal">
+    <p  class="head1">PRIME Calculator</p>
+    <br>
+    <label for="num" id="hed" class="text-primary" >Enter the Number :</label>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="num" placeholder="Typehere ..." (keydown.enter)="check()">
+    <br><br>
+    
+    <p id="re1" class="result" ></p>
+    <br>
+
+    <div matRipple class="rip" matRippleColor="white" 
+    onclick ="PRIME()" matRippleCentered="centered">CHECK
+    </div>
+    </form>
+</div>

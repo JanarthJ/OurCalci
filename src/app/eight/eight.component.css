@@ -1,0 +1,15 @@
+.heading
+{
+    font-size: large;
+    color: lime;
+}
+.para
+{
+    font-size: medium;
+    color: wheat;
+
+}
+table {
+    min-width: 100%;
+    width: auto;
+  }

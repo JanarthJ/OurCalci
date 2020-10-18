@@ -1,0 +1,953 @@
+
+<mat-tab-group>
+    <mat-tab  label="Introduction"> 
+        <p></p>
+        <span class="tit">In our Area Calculator ,we provide a features to calculate area, 
+            perimeter , volume and other of the following shapes given below...</span>
+        <mat-list role="list">
+            <mat-list-item  role="listitem">Square</mat-list-item>
+            <mat-list-item role="listitem">Rectangle</mat-list-item>
+            <mat-list-item role="listitem">Triangle</mat-list-item>
+            <mat-list-item role="listitem">Circle</mat-list-item>
+            <mat-list-item role="listitem">Cylinder</mat-list-item>
+            <mat-list-item role="listitem">Sphere</mat-list-item>
+            <mat-list-item role="listitem">cube</mat-list-item>
+            <mat-list-item role="listitem">Parallogram</mat-list-item>
+            <mat-list-item role="listitem">Rhombus </mat-list-item>
+            <mat-list-item role="listitem">Cone</mat-list-item>
+          </mat-list>
+          
+    </mat-tab>
+    <mat-tab label="Square" > 
+        <mat-tab-group>
+            <mat-tab label="Area">  
+                <div class="headings">
+                    <br>
+                <p class="notes">Here find a area of Square </p> <br>
+                <span class="notes" >Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="notes">AREA = a<sup>2</sup></span><br><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">where,</span><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">a - side of the Square</span><br>
+                </div>
+                
+    <div class="wrap2">
+	<form name="calci">
+    <p  class="head1">Area of Square</p>
+    <br>
+    <label for="sid1" id="hed" class="text-primary" >Enter the side length :</label>
+    <br>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="sid1" placeholder="Typehere ..."
+    (keydown.enter)="pr()" >
+    <br><br>
+    <p id="res1" class="result" ></p>
+    <br>
+    <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_sq()">
+    </form>
+    </div>
+            </mat-tab>
+            <mat-tab label="Perimeter"> 
+                <div class="headings">
+                    <br>
+                    <p class="notes">Here find a perimeter of Square </p> <br>
+                    <span class="notes">Formula : </span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="notes">PERIMETER = 4*a</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">a - side of the Square</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Perimeter of Square</p>
+        <br>
+        <label for="sid2" id="hed" class="text-primary" >Enter the side length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="sid2" placeholder="Typehere ..."
+        (keydown.enter)="pr1()" >
+        <br><br>
+        <p id="res2" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="peri_sq()">
+        </form>
+        </div>
+            </mat-tab>
+            <mat-tab label="Diagonal">  
+                <div class="headings">
+                    <br>
+                    <p class="notes">Here find a diagonal of Square </p> <br>
+                    <span class="notes">Formula :</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="notes">DIAGONAL =<span>&#8730;</span>2* a</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">where,</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="notes">a - side of the Square</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Diagonal of Square</p>
+        <br>
+        <label for="sid3" id="hed" class="text-primary" >Enter the side length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="sid3" placeholder="Typehere ..."
+        (keydown.enter)="pr2()" >
+        <br><br>
+        <p id="res3" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="dia_sq()">
+        </form>
+        </div>
+            </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>
+    <mat-tab label="Rectangle">  
+        <mat-tab-group>
+            <mat-tab label="Area">
+                <div class="headings">
+                    <br>
+                    <p class="notes" >Here find a area of Rectangle </p> <br>
+                    <span class="notes" >Formula :</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="notes" >AREA = l*b</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="notes" >where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="notes" >l - length of the rectangle</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="notes" >b - breadth of the rectangle</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Rectangle</p>
+        <br>
+        <label for="l1" id="hed" class="text-primary" >Enter the  length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="l1" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="b1" id="hed" class="text-primary" >Enter the  breadth :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="b1" placeholder="Typehere ..."
+        (keydown.enter)="pr_r()" >
+        <br><br>
+        <p id="res4" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_rec()">
+        </form>
+        </div>              
+            </mat-tab>
+            <mat-tab label="Perimeter">
+                <div class="headings">
+                    <br>
+                    <p >Here find a perimeter of Rectangle </p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>PERIMETER = 2*(l+b)</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>l - length of the rectangle</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - breadth of the rectangle</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Perimeter of Rectangle</p>
+        <br>
+        <label for="l2" id="hed" class="text-primary" >Enter the  length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="l2" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="b2" id="hed" class="text-primary" >Enter the  breadth :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="b2" placeholder="Typehere ..."
+        (keydown.enter)="pr_r2()" >
+        <br><br>
+        <p id="res5" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="peri_rec()">
+        </form>
+        </div> 
+      </mat-tab>
+            <mat-tab label="Diagonal"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a diagonal of Rectangle </p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Diagonal = <span>&#8730;</span>(l<sup>2</sup> + b<sup>2</sup>)</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>l - length of the rectangle</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - breadth of the rectangle</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Diagonal of Rectangle</p>
+        <br>
+        <label for="l3" id="hed" class="text-primary" >Enter the  length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="l3" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="b3" id="hed" class="text-primary" >Enter the  breadth :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="b3" placeholder="Typehere ..."
+        (keydown.enter)="pr_r3()" >
+        <br><br>
+        <p id="res6" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="dia_rec()">
+        </form>
+        </div> 
+     </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>
+     
+    <mat-tab label="Triangle">  
+        <mat-tab-group>
+            <mat-tab label="Area">    
+                <div class="headings">
+                    <br>
+                    <p>Here find a area of triangle</p><br> 
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA = (b*h)/2</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - height of the triangle</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - base of the triangle</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Triangle</p>
+        <br>
+        <label for="s1" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="s1" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="br1" id="hed" class="text-primary" >Enter the  base :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="br1" placeholder="Typehere ..."
+        (keydown.enter)="pr_tri1()" >
+        <br><br>
+        <p id="res7" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_tri()">
+        </form>
+        </div>      
+            </mat-tab>
+            <mat-tab label="Perimeter">
+                <div class="headings">
+                    <br>
+                    <p>Here find a perimeter of triangle</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Perimeter = a + b + c</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>a - 1st side of the triangle</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - base side(3rd) of the triangle</span><br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>c - 2nd side of the triangle</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Perimeter of Triangle</p>
+        <br>
+        <label for="s2" id="hed" class="text-primary" >Enter the  1st side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="s2" placeholder="Typehere ..."
+        >
+        <br>
+        <label for="br2" id="hed" class="text-primary" >Enter the  base side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="br2" placeholder="Typehere ..."
+        >
+        <br>
+        <label for="s3" id="hed" class="text-primary" >Enter the  2nd side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="s3" placeholder="Typehere ..."
+        (keydown.enter)="pr_tri2()" >
+        <br><br>
+        <p id="res8" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="peri_tri()">
+        </form>
+        </div>    
+            </mat-tab>
+            
+            
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Circle">   
+        <mat-tab-group>
+            <mat-tab label="Area"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a area of Circle</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA = &#960; * r<sup>2</sup></span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Circle</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Circle</p>
+        <br>
+        <label for="rad" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="rad" placeholder="Typehere ..." (keydown.enter)="ar_cir()"
+        >
+        <br>     
+         
+        <br>
+        <p id="res9" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_cir()">
+        </form>
+        </div>          
+            </mat-tab>
+            <mat-tab label="Circumference"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a Circumference of Circle</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Circumference = 2&#960; * r</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Circle</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Circumference of Circle</p>
+        <br>
+        <label for="rad1" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="rad1" placeholder="Typehere ..." (keydown.enter)="cum_cir()"
+        >
+        <br>     
+         
+        <br>
+        <p id="res10" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="circum_cir()">
+        </form>
+        </div> 
+            </mat-tab>
+            
+            
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Sphere">  
+        <mat-tab-group>
+            <mat-tab label="Area">  
+                <div class="headings">
+                    <br>
+                    <p>Here find a area of Sphere</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA = 4&#960; * r<sup>2</sup></span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Sphere</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Sphere</p>
+        <br>
+        <label for="srad" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="srad" placeholder="Typehere ..." (keydown.enter)="ar_sp()">
+        <br>     
+         
+        <br>
+        <p id="res11" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_sp()">
+        </form>
+        </div>            
+            </mat-tab>
+            <mat-tab label="Volume">  
+                <div class="headings">
+                    <br>
+                    <p>Here find a Volume of Sphere</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>VOLUME =( 4&#960; * r<sup>3</sup>)/3</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Sphere</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Volume of Sphere</p>
+        <br>
+        <label for="srad1" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="srad1" placeholder="Typehere ..." (keydown.enter)="pr_sp()">
+        <br>     
+         
+        <br>
+        <p id="res12" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="vol_sp()">
+        </form>
+        </div>
+            </mat-tab>
+              
+        </mat-tab-group>
+    </mat-tab>
+    
+    <mat-tab label="Cylinder">  
+        <mat-tab-group>
+            <mat-tab label="SurfaceArea">  
+                <div class="headings">
+                    <br>
+                    <p>Here find a Surfacearea of Cylinder</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA<sub>S</sub> = 2&#960; * r * h + 2&#960; r<sup>2</sup></span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Cylinder</span><br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the Cylinder</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">SurfaceArea of Cylinder</p>
+        <br>
+        <label for="cr" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cr" placeholder="Typehere ..." >
+        <br>     
+        <label for="ch" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="ch" placeholder="Typehere ..." (keydown.enter)="suf_cy()">
+        
+        <br><br>
+        <p id="res16" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="sufarea_cy()">
+        </form>
+        </div>          
+            </mat-tab>
+            <mat-tab label="LateralArea"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a Lateralarea of Cylinder</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA<sub>L</sub> = 2&#960; * r * h </span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Cylinder</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the Cylinder</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">LateralArea of Cylinder</p>
+        <br>
+        <label for="cr1" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cr1" placeholder="Typehere ..." >
+        <br>     
+        <label for="ch1" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="ch1" placeholder="Typehere ..." (keydown.enter)="lat_cy()">
+        
+        <br><br>
+        <p id="res17" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="latarea_cy()">
+        </form>
+        </div>   
+            </mat-tab>
+            <mat-tab label="BaseArea">   
+                <div class="headings">
+                    <br>
+                    <p>Here find a Basearea of Cylinder</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA <sub>B</sub>= &#960; * r <sup>2</sup> </span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Cylinder</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Basearea of Cylinder</p>
+        <br>
+        <label for="cr2" id="hed" class="text-primary" >Enter the  radius :</label>
+    
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cr2" placeholder="Typehere ..." (keydown.enter)="base_cy()">
+        
+        <br><br>
+        <p id="res18" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="basearea_cy()">
+        </form>
+        </div>  
+            </mat-tab>
+            <mat-tab label="Volume"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a Volume of Cylinder</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>VOLUME = &#960; * r<sup>2</sup> * h </span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the Cylinder</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the Cylinder</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Volume of Cylinder</p>
+        <br>
+        <label for="cr3" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cr3" placeholder="Typehere ..." >
+        <br>     
+        <label for="ch3" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="ch3" placeholder="Typehere ..." (keydown.enter)="prs_volcy()">
+        <br>
+        <br>
+        <p id="res19" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="vol_cy()">
+        </form>
+        </div> 
+            </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="RightcircularCone">  
+        <mat-tab-group>
+            <mat-tab label="SurfaceArea">  
+                <div class="headings">
+                    <br>
+                    <p>Here find a Surfacearea of RC cone</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA<sub>S</sub> = &#960;r (r + <span>&#8730;</span>(h<sup>2</sup> + r <sup>2</sup>))</span><br><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the RC cone</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the RC cone</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Surfacearea of RC cone</p>
+        <br>
+        <label for="conr" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conr" placeholder="Typehere ..." >
+        <br>     
+        <label for="conh" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conh" placeholder="Typehere ..." (keydown.enter)="suf_cone()">
+        
+        <br><br>
+        <p id="res20" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="sufarea_cone()">
+        </form>
+        </div>          
+            </mat-tab>
+            <mat-tab label="LateralArea"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a Lateralarea of RC Cone</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA<sub>L</sub> = &#960;r  <span>&#8730;</span>
+                    (h<sup>2</sup> + r <sup>2</sup>) </span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the RC Cone</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the RC Cone</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">LateralArea of RC Cone</p>
+        <br>
+        <label for="conr1" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conr1" placeholder="Typehere ..." >
+        <br>     
+        <label for="conh1" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conh1" placeholder="Typehere ..." (keydown.enter)="lat_cone()">
+        
+        <br><br>
+        <p id="res21" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="latarea_cone()">
+        </form>
+        </div>   
+            </mat-tab>
+            <mat-tab label="BaseArea">   
+                <div class="headings">
+                    <br>
+                    <p>Here find a Basearea of RC cone</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA <sub>B</sub>= &#960; * r <sup>2</sup> </span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the RC Cone</span><br>
+                    
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Basearea of RC cone</p>
+        <br>
+        <label for="conr2" id="hed" class="text-primary" >Enter the  radius :</label>
+    
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conr2" placeholder="Typehere ..." (keydown.enter)="base_cone()">
+        
+        <br><br>
+        <p id="res22" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="basearea_cone()">
+        </form>
+        </div>  
+            </mat-tab>
+            <mat-tab label="Volume"> 
+
+                <div class="headings">
+                    <br>
+                    <p>Here find a Volume of RC Cone</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>VOLUME = (&#960; * r<sup>2</sup> * h )/3</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>r - Radius of the RC Cone</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the RC Cone</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Volume of RC Cone</p>
+        <br>
+        <label for="conr3" id="hed" class="text-primary" >Enter the  radius :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conr3" placeholder="Typehere ..." >
+        <br>     
+        <label for="conh3" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="conh3" placeholder="Typehere ..." (keydown.enter)="prvol_cone()">
+        <br>
+        <br>
+        <p id="res23" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="vol_cone()">
+        </form>
+        </div> 
+            </mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Cube">  
+        <mat-tab-group>
+            <mat-tab label="Area">   
+                <div class="headings">
+                    <br>
+                    <p>Here find a area of Cube</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA = 6*a<sup>2</sup></span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>a - side of the Circle</span><br>
+                 </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Cube</p>
+        <br>
+        <label for="cubs" id="hed" class="text-primary" >Enter the  Side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cubs" placeholder="Typehere ..." (keydown.enter)="pr_cub()">
+        <br>     
+         
+        <br>
+        <p id="res13" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_cube()">
+        </form>
+        </div>             
+            </mat-tab>
+            <mat-tab label="Volume"> 
+                <div class="headings">
+                    <br>
+                    <p>Here find a Volume of Cube</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>VOLUME =a<sup>3</sup></span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>a - side of the Cube</span><br>
+                </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Volume of Cube</p>
+        <br>
+        <label for="scub" id="hed" class="text-primary" >Enter the  side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="scub" placeholder="Typehere ..." (keydown.enter)="pr_cube()">
+        <br>     
+         
+        <br>
+        <p id="res14" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="vol_cube()">
+        </form>
+        </div>    
+            </mat-tab>
+            <mat-tab label="Diagonal">
+                <div class="headings">
+                    <br>
+                    <p>Here find a diagonal of Cube</p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Diagonal = <span>&#8730;</span>(3)*a</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>a - side of the Cube</span><br>
+                 </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Diagonal of Cube</p>
+        <br>
+        <label for="cubs1" id="hed" class="text-primary" >Enter the  Side :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="cubs1" placeholder="Typehere ..." (keydown.enter)="pr_dia()">
+        <br>     
+         
+        <br>
+        <p id="res15" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="dia_cube()">
+        </form>
+        </div>    
+            </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Parallogram">  
+        <mat-tab-group>
+            <mat-tab label="Area">
+                <div class="headings">
+                    <br>
+                    <p>Here find a area of Parallelogram </p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>AREA = h*b</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - Height of the Parallelogram</span><br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - Base of the Parallelogram</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Parallelogram</p>
+        <br>
+        <label for="bas" id="hed" class="text-primary" >Enter the  base :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="bas" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="phei" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="phei" placeholder="Typehere ..."
+        (keydown.enter)="pr_par()" >
+        <br><br>
+        <p id="res24" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_par()">
+        </form>
+        </div>              
+            </mat-tab>
+            <mat-tab label="Perimeter">
+                <div class="headings">
+                    <br>
+                    <p>Here find a perimeter of Parallelogram </p> <br>
+                    <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Perimeter = 2*(b+h)</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>h - height of the Parallelogram</span><br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b - base of the Parallelogram</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Perimeter of Parallelogram</p>
+        <br>
+        <label for="bas2" id="hed" class="text-primary" >Enter the  base :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="bas2" placeholder="Typehere ..."
+        >
+        <br>
+
+        <label for="phei2" id="hed" class="text-primary" >Enter the  height :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="phei2" placeholder="Typehere ..."
+        (keydown.enter)="pr1_par()" >
+        <br><br>
+        <p id="res25" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="peri_par()">
+        </form>
+        </div> 
+      </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Rhombus">  
+        <mat-tab-group>
+            <mat-tab label="Area">
+            <div class="headings">
+                <br>
+            <p>Here find a area of Rhombus </p> <br>
+            <span>Formula :</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>AREA = (d<sub>1</sub>*d<sub>2</sub>)/2</span><br><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>d<sub>1</sub> - 1st Diagonal of the Rhombus</span><br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>d<sub>2</sub> - 2nd Diagonal of the Rhombus</span><br>
+            </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Area of Rhombus</p>
+        <br>
+        <label for="diag1" id="hed" class="text-primary" >Enter the  length of Diagonal :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="diag1" placeholder="Typehere ..."
+        >
+        <br> 
+
+        <label for="diag2" id="hed" class="text-primary" >Enter the  length of Diagonal :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="diag2" placeholder="Typehere ..."
+        (keydown.enter)="pr_rhom1()" >
+        <br><br>
+        <p id="res28" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="area_rhom()">
+        </form>
+        </div>              
+        </mat-tab>
+            
+    <mat-tab label="Perimeter">
+                <div class="headings">
+                    <br>
+                    <p>Here find a perimeter of Rhombus </p> <br>
+                    <span>Formula : </span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>PERIMETER = 4*a</span><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>where,</span><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>a - side of the Rhombus</span><br>
+                    </div>
+                    
+        <div class="wrap2">
+        <form name="calci">
+        <p  class="head1">Perimeter of Rhombus</p>
+        <br>
+        <label for="side" id="hed" class="text-primary" >Enter the side length :</label>
+        <br>
+        <input class="input-group-Number"  name="display" 
+        onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+        type="text" required id="side" placeholder="Typehere ..."
+        (keydown.enter)="pr_rhom2()" >
+        <br><br>
+        <p id="res27" class="result" ></p>
+        <br>
+        <input type="button" value="calculate" class="btn btn-primary"  onclick ="peri_rhom()">
+        </form>
+        </div>
+      </mat-tab>
+            
+        </mat-tab-group>
+    </mat-tab>    
+</mat-tab-group>

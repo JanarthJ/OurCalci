@@ -1,0 +1,28 @@
+
+<div class="wrap2">
+	<form name="calci">
+    <p  class="head1">Simple Interest Calculator</p>
+    <br>
+    <label for="w" id="hed" class="text-primary" >Enter The Amount :</label>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="p" placeholder="Typehere the amount..." >
+
+    <br><br>
+    <label for="no" id="hed" class="text-primary">Enter The Year :</label>
+    <input class="input-group-Number"  name="display" id="no" required 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" placeholder="Typehere the year..." >
+
+    <br> <br>
+    <label for="r" id="hed" class="text-primary">Enter The Rate :</label>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="r" placeholder="Typehere the rate..." (keydown.enter)="prs()">
+
+    <br><br>
+    <p id="res" class="result" ></p>
+    <br>
+    <input type="button" value="calculate" class="btn btn-primary"  onclick ="SI()">
+</form>
+</div>

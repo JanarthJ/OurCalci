@@ -1,0 +1,33 @@
+<div class="wrap2">
+	<form name="calci">
+    <p  class="head1">Compound Interest Calculator</p>
+    <br>
+    <label for="w" id="hed" class="text-primary" >Enter the principal amount :</label>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="p" placeholder="Typehere the amount..." >
+
+    <br>
+    <label for="c" id="hed" class="text-primary">Enter the Compound/Year :</label>
+    <input class="input-group-Number"  name="display" id="c" required 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" placeholder="Typehere the compound/year..." >
+    <br>
+    <label for="no" id="hed" class="text-primary">Enter the year :</label>
+    <input class="input-group-Number"  name="display" id="no" required 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" placeholder="Typehere the year..." >
+
+    <br>
+
+    <label for="r" id="hed" class="text-primary">Enter the rate :</label>
+    <input class="input-group-Number"  name="display" 
+    onkeypress="return event.charCode >= 37    && event.charCode <= 57" 
+    type="text" required id="r" placeholder="Typehere the rate..." (keydown.enter)="press()">
+
+    <br><br>
+    <p id="resu" class="result" ></p>
+    <br><br>
+    <input type="button" value="calculate" class="btn btn-primary"  onclick ="CI()">
+</form>
+</div>

@@ -1,0 +1,102 @@
+<div align="justify">
+
+ <p class="para">OurCalculator  is a mini project on single page application using angular framework.
+ Here ,  providing a different types of calculator for users such as,</p>
+ <table mat-table  [dataSource]="dataSource"  class="mat-elevation-z8">
+    <ng-container matColumnDef="no">
+        <th mat-header-cell *matHeaderCellDef> S.NO </th>
+        <td mat-cell *matCellDef="let each"> {{each.no}} </td>
+      </ng-container>
+    
+      
+      <ng-container  matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> Types </th>
+        <td mat-cell *matCellDef="let index"> {{index.type}} </td>
+      </ng-container> 
+          
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<p class="para">Hope that , these calculators are </p>
+    <table mat-table  [dataSource]="dataSource1"  class="mat-elevation-z8">
+        <ng-container matColumnDef="sno">
+            <th mat-header-cell *matHeaderCellDef> S.NO </th>
+            <td mat-cell *matCellDef="let each"> {{each.sno}} </td>
+          </ng-container>
+        
+          
+          <ng-container  matColumnDef="feature">
+            <th mat-header-cell *matHeaderCellDef> Features </th>
+            <td mat-cell *matCellDef="let index"> {{index.feature}} </td>
+          </ng-container> 
+              
+    <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+    </table>
+   
+    <label for="std"  class="heading" >Standard Calculator</label>     
+	<p id="std" class="para" >
+        Here, OurCalculator providing different types of free calculator for solve 
+    the task or problem easily. User do their task like addtion , subtraction , 
+    multiplication , division and square of a number  
+    in mathematics using our Standard calculator.</p>
+    
+    <br><br>
+    <label for="sci"  class="heading" >Scientific Calculator</label>
+    <p id="sci" class="para">
+    User, wish to solve a advance mathematics problem  easily using our scientific calculator.
+    In ourcalculator providing features for taking square and cube root of a number ,
+    taking power of a given number , factorial of a given number, exponent of a number ,
+    and other features like taking log , l10e and so on.
+    </p>
+    <br><br>
+    <label for="are"  class="heading" >AREA Calculator</label>
+     <p class="para" id="are">
+         In our Area Calculator ,provide a features to calculate area, perimeter,
+        volume and other of the following shapes given below...
+           
+    </p>
+    <table mat-table  [dataSource]="dataSource2"  class="mat-elevation-z8">
+           
+          
+          <ng-container  matColumnDef="shape">
+            <th mat-header-cell *matHeaderCellDef> shapes </th>
+            <td mat-cell *matCellDef="let index"> {{index.shape}} </td>
+          </ng-container> 
+              
+    <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+    </table>
+   <br><br>
+   <label for="int"  class="heading" >Interest Calculator</label>
+    <p id="int" class="para">
+    User wish to know the interest for  the given amount easily using our Interest 
+    calculators easily.
+    In ourcalculator ,  providing two calci such as simple interest calculator 
+    and compound interest    calculator .
+    </p>
+    <br><br>
+   <label for="bmi"  class="heading" >BMI Calculator</label>
+    <p id="bmi" class="para">
+    User wish to know the Bmi range by  using our BMI calculator easily.
+    In ourcalculator , user entering the weight and height of 
+    in  the given corresponding  input tabs in then hit or press
+     the 'ENTER' our BMI calci .
+    That will show you the result quickly and know the 
+    bmi range of him/her.
+    </p>
+    <br><br>
+   <label for="prime"  class="heading" >Prime Calculator</label>
+    <p id="prime" class="para">
+    User, wish to know the given number is prime or not by  using our Prime calculator easily.
+    In ourcalculator , user entering the number  in  the 
+    given corresponding  input tabs then hit or press
+     the 'ENTER' in our prime calci.
+    That will show you the result quickly and then know the 
+    the given number is prime or not.
+    </p>
+    
+    <p class="heading"> Support us more and thank you all  </p>
+        
+</div>

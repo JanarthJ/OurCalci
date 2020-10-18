@@ -1,0 +1,63 @@
+
+<div class="scontainer">
+<form name = "calc"> 
+	<input name="display" placeholder =" Please Enter.."  onkeypress="return (event.charCode >= 37 
+            && event.charCode <= 57) | (event.charCode == 94)" id="i" type="text"> 
+	<br><br>
+    <input   type="button" value="Back" class="btn btn-secondary" OnClick="backspace(this.form)"> 
+    <input   type="button" class="num" value="1" class="btn btn-light" OnClick="calc.display.value+='1'"> 
+	<input  type="button" class="num" value="2"  class="btn btn-light"  OnClick="calc.display.value+='2'"> 
+    <input  type="button" class="num" value="3" class="btn btn-light" OnClick="calc.display.value+='3'"> 
+    <input  type="button" value="+" class="btn btn-secondary" OnClick="calc.display.value+='+'"> 
+    <input  type="button"  value="Enter" class="btn btn-secondary" OnClick="calculate(this.form)"> 
+    <br><br>     
+    <input  type="button" value="Clr" class="btn btn-secondary" OnClick="calc.display.value=''">
+    <input  type="button" class="num" value="4"  class="btn btn-light" OnClick="calc.display.value+='4'"> 
+    <input  type="button" class="num" value="5" class="btn btn-light" OnClick="calc.display.value+='5'"> 
+    <input  type="button" class="num" value="6" class="btn btn-light" OnClick="calc.display.value+='6'"> 
+    <input  type="button" value="-" class="btn btn-secondary" OnClick="calc.display.value='-'"> 
+    <input  type="button" value="*" class="btn btn-secondary" OnClick="calc.display.value+='*'"> 
+    
+	<br><br>
+    <input  type="button" value="." class="btn btn-secondary" OnClick="calc.display.value+='.'"> 
+    <input  type="button" class="num" value="7" class="btn btn-light" OnClick="calc.display.value+='7'"> 
+    <input  type="button" class="num" value="8" class="btn btn-light" OnClick="calc.display.value+='8'"> 
+    <input  type="button" class="num" value="9" class="btn btn-light" OnClick="calc.display.value+='9'"> 
+    <input  type="button" value="/" class="btn btn-secondary" OnClick="calc.display.value+='/'">
+    <input  type="button" value="%" class="btn btn-secondary" OnClick="calc.display.value+='%'"> 
+	   
+    <br><br>      
+    
+    <input  type="button" value="X^3" class="btn btn-secondary" onclick ="cub()">
+    <input  type="button" value="00" class="btn btn-secondary" OnClick="calc.display.value+='00'">
+    <input  type="button" class="num" value="0" class="btn btn-light" OnClick="calc.display.value+='0'"> 
+    <input  type="button" value="," class="btn btn-secondary" OnClick="calc.display.value+=','"> 
+    <input  type="button" value="X^2" class="btn btn-secondary" onclick ="Sq()">
+    <input  type="button" value="sin" class="btn btn-secondary" onclick ="sin()"> 
+	  
+    <br><br>       
+        
+    <input  type="button" value="Pow"  class="btn btn-secondary" onclick ="Pow()" > 
+    <input  type="button" value="(" class="btn btn-secondary" OnClick="calc.display.value+='('"> 
+    <input  type="button" value=")"  class="btn btn-secondary" OnClick="calc.display.value+=')'"> 
+    <input  type="button" value="sqrt" class="btn btn-secondary" onclick ="sqrt()">
+    <input  type="button" value="cbrt" class="btn btn-secondary" onclick ="cube()"> 
+    <input  type="button" value="cos" class="btn btn-secondary" onclick ="cos()">	
+    <br><br>       
+    <input  type="button" value="log" class="btn btn-secondary"  onclick ="ln()"> 
+    <input  type="button" value="l10e" class="btn btn-secondary"  onclick ="log10()">
+    <input  type="button" value="Pi"  class="btn btn-secondary"  onclick ="pi()"> 
+    <input  type="button" value="Fact!" class="btn btn-secondary" OnClick="calc.display.value+='!'"> 
+    <input  type="button" value="exp" class="btn btn-secondary"   onclick ="Exp()"> 
+    <input  type="button" value="tan" class="btn btn-secondary" onclick ="tan()"> 
+    <br>    
+</form>
+</div>
+
+<!--
+	save(event: { target: { value: any; }; })
+    {
+      console.log("You entered: ", event.target.value);
+      calculate(event);
+    }
+-->

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css");
+
+.home
+{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+.cl
+{
+    color: crimson;
+    text-align: center;
+    font-size: 30px;
+   padding-top: 10%;
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
